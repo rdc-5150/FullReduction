@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 // Input detection
 var input_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 var input_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
@@ -37,7 +38,26 @@ if (input_right) {
     image_xscale = 1;
     target_angle = 0;    // Straight right
 }
-    
+   
+//angled movements
+if (input_right && input_up) {
+    image_xscale = 1;
+    target_angle = 45;    // Straight right
+}
+   
+if (input_right && input_down) {
+    image_xscale = 1;
+    target_angle = -45;    // Straight right
+}
+if (input_left && input_up) {
+    image_xscale = -1;
+    target_angle = -45;    // Straight right
+}
+if (input_left && input_down) {
+    image_xscale = -1;
+    target_angle = 45;    // Straight right
+}
+ 
 // Smooth rotation interpolation
 var rotation_speed = 5; // Adjust this value to control rotation smoothness
 image_angle = lerp(image_angle, target_angle, rotation_speed * (1/60));
@@ -58,7 +78,7 @@ y += vspd;
 
 //Torpedo firing
 if torpacq = true{
-    if ship_power >= 15 
+    if ship_power >= 10 
     if (keyboard_check_pressed(ord("M"))) {
     var bullet = instance_create_layer(x, y+5, "Instances", objTorpedo)
     bullet.direction = point_direction(0, 0, image_xscale, 0); 
