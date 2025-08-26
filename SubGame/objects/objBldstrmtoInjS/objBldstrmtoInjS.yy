@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"objPwrFull",
-  "eventList":[],
+  "%Name":"objBldstrmtoInjS",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"objPwrFull",
+  "name":"objBldstrmtoInjS",
   "overriddenProperties":[],
   "parent":{
-    "name":"HUD",
-    "path":"folders/Objects/HUD.yy",
+    "name":"Environment",
+    "path":"folders/Objects/Environment.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPwr",
-    "path":"sprites/sprPwr/sprPwr.yy",
+    "name":"portalRoom2",
+    "path":"sprites/portalRoom2/portalRoom2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

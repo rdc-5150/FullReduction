@@ -34,5 +34,5 @@
     "path":"sprites/portalRoom2/portalRoom2.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

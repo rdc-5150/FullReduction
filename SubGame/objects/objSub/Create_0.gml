@@ -4,7 +4,7 @@ if (live_call()) return live_result;
 // Movement variables
 hspd = 0;                // Horizontal velocity
 vspd = 0;                // Vertical velocity
-acceleration = 0.075;      // How fast sub speeds up
+acceleration = 0.085;      // How fast sub speeds up
 friction = 10;          // Water resistance
 
 // Physics

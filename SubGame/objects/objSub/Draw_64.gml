@@ -1,5 +1,4 @@
-//background black box
-//draw_rectangle_color(0,0,512,30,c_white,c_white,c_white,c_white,false)
+//GMLive
 if (live_call()) return live_result;
     
 //health bar box

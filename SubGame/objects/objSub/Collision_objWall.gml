@@ -1,3 +1,5 @@
+if (live_call()) return live_result;
+    
 //wall collision
 if (place_meeting(x, y, objWall)){
     hspd = 0
@@ -15,6 +17,5 @@ if (place_meeting(x, y + push_distance, objWall)) {
 }
 if (place_meeting(x, y - push_distance, objWall)) {
     y += push_distance;
+    
 }
-
-
