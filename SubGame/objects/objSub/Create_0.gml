@@ -24,6 +24,3 @@ ship_power_max = 100 //ship's maximum power stores
 
 //Torpedoes acquired?
 torpacq = false
-
-//Variables for reduction
-//scale = image_xscale && image_yscale

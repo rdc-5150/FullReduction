@@ -34,9 +34,9 @@ if (input_down) {
 }
 
 // Sprite rotation based on movement direction
-var target_angle = image_angle;
+var target_angle = image_angle; 
 
-// Straight movements 
+// Straight spritemovements 
 if (input_left) {
     image_xscale = -1;
     target_angle = 0;    // Straight left
@@ -47,7 +47,7 @@ if (input_right) {
     target_angle = 0;    // Straight right
 }
    
-//angled movements
+////angled sprite movements
 if (input_right && input_up) {
     image_xscale = 1;
     target_angle = 25;    // Straight right
@@ -65,15 +65,20 @@ if (input_left && input_down) {
     image_xscale = -1;
     target_angle = 25;    // Straight right
 }
-    
+
+//Variables for Red/Ex
+var target_size = (image_xscale && image_yscale)
+
 
 // Smooth rotation interpolation
-var rotation_speed = 5; // Adjust this value to control rotation smoothness
+var rotation_speed = 5; 
+
+// Adjust this value to control rotation smoothness
 image_angle = lerp(image_angle, target_angle, rotation_speed * (1/60));
 
 //Room Clamp plus width of sub for Portals
-x = clamp(x,0, room_width + sprite_width;
-y = clamp(y,1,room_height); 
+x = clamp(x,0, room_width)
+y = clamp(y,1, room_height); 
 
 
 // Water resistance
@@ -94,16 +99,11 @@ if torpacq = true{
     }
 }
 
-
-//Reduction mechanic 
+//
+////reduction mechanic 
 //if (keyboard_check_pressed(ord("B")) && scale >= 8)
-//{
-    //scale =- .5
-//}
-
-////Expansion mechanic
-//if (keyboard_check_pressed(ord("V")) && scale > 16)
-//{
-    //image_xscale =+ 2
-    //image_yscale =+ 2
+//
+//
+////expansion mechanic
+//if (keyboard_check_pressed(ord("V")) &&
 //}
