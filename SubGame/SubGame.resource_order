@@ -30,6 +30,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"GMLive_fallback","order":1,"path":"extensions/GMLive_fallback/GMLive_fallback.yy",},
+    {"name":"GitTest","order":2,"path":"objects/GitTest/GitTest.yy",},
     {"name":"obj_gmlive","order":6,"path":"objects/obj_gmlive/obj_gmlive.yy",},
     {"name":"objBioEng","order":6,"path":"objects/objBioEng/objBioEng.yy",},
     {"name":"objBlank","order":6,"path":"objects/objBlank/objBlank.yy",},
