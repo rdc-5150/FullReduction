@@ -22,8 +22,8 @@ ship_power_max = 100 //ship's maximum power stores
 ////light orb system
 //orbmax = 2 //number of orbs that can be used
 
-facing = 0
-
+//Torpedoes acquired?
 torpacq = false
 
-scale = image_xscale && image_yscale
+//Variables for reduction
+//scale = image_xscale && image_yscale

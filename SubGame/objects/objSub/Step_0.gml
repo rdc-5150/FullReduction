@@ -71,9 +71,9 @@ if (input_left && input_down) {
 var rotation_speed = 5; // Adjust this value to control rotation smoothness
 image_angle = lerp(image_angle, target_angle, rotation_speed * (1/60));
 
-//Room Clamp
-x = clamp(x,0, room_width + sprite_height);
-y = clamp(y,1,room_height + sprite_height); 
+//Room Clamp plus width of sub for Portals
+x = clamp(x,0, room_width + sprite_width;
+y = clamp(y,1,room_height); 
 
 
 // Water resistance
@@ -82,7 +82,6 @@ vspd *= water_resistance;
 
 // === APPLY MOVEMENT ===
 x += hspd;
-
 y += vspd;
 
 //Torpedo firing
@@ -96,13 +95,13 @@ if torpacq = true{
 }
 
 
-//Reduction  
-if (keyboard_check_pressed(ord("B")) && scale >= 8)
-{
-    scale =- .5
-}
+//Reduction mechanic 
+//if (keyboard_check_pressed(ord("B")) && scale >= 8)
+//{
+    //scale =- .5
+//}
 
-////Expansion
+////Expansion mechanic
 //if (keyboard_check_pressed(ord("V")) && scale > 16)
 //{
     //image_xscale =+ 2
