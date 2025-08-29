@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"objPortal1",
+  "%Name":"objPartSys",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objPortal1",
+  "name":"objPartSys",
   "overriddenProperties":[],
   "parent":{
-    "name":"Portals",
-    "path":"folders/Objects/Environment/Portals.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprPortal",
-    "path":"sprites/sprPortal/sprPortal.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

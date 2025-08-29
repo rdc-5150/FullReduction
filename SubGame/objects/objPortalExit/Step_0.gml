@@ -1,6 +1,6 @@
 
 if (place_meeting(x, y, objSub)) { 
-    objSub.x = 32;
+    objSub.x = 1990;
     objSub.y = 777;
-    room_goto(artery2);
+    room_goto_previous();
 }

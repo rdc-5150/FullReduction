@@ -11,3 +11,4 @@ if ship_power_max >= 100
 {
 draw_sprite(sprPwr, 0, x, y-32);
 }
+   

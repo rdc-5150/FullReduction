@@ -26,4 +26,4 @@ facing = 0
 
 torpacq = false
 
-image_xscale = 1
+scale = image_xscale && image_yscale
