@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"objPortalBloodstreamToCranium",
+  "%Name":"objPortal2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objPortalBloodstreamToCranium",
+  "name":"objPortal2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Environment",
-    "path":"folders/Objects/Environment.yy",
+    "name":"Portals",
+    "path":"folders/Objects/Environment/Portals.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,9 +30,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"portalRoom2",
-    "path":"sprites/portalRoom2/portalRoom2.yy",
+    "name":"sprPortal",
+    "path":"sprites/sprPortal/sprPortal.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
