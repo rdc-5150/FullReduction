@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"objBrain",
-  "eventList":[],
+  "%Name":"Object20",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"objBrain",
+  "name":"Object20",
   "overriddenProperties":[],
   "parent":{
-    "name":"Environment",
-    "path":"folders/Objects/Environment.yy",
+    "name":"GameSave",
+    "path":"folders/Objects/GameSave.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite17",
+    "path":"sprites/Sprite17/Sprite17.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

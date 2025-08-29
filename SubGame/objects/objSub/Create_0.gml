@@ -26,4 +26,4 @@ ship_power_max = 100 //ship's maximum power stores
 torpacq = false
 
 //Variables for reduction
-//scale = image_xscale && image_yscale
+scale = image_xscale && image_yscale
