@@ -94,7 +94,6 @@
     {"id":{"name":"GMLive","path":"scripts/GMLive/GMLive.yy",},},
     {"id":{"name":"GMLiveAPI_js","path":"scripts/GMLiveAPI_js/GMLiveAPI_js.yy",},},
     {"id":{"name":"GMLiveAPI","path":"scripts/GMLiveAPI/GMLiveAPI.yy",},},
-    {"id":{"name":"te","path":"scripts/te/te.yy",},},
     {"id":{"name":"speedboost1","path":"sprites/speedboost1/speedboost1.yy",},},
     {"id":{"name":"sprBioEng","path":"sprites/sprBioEng/sprBioEng.yy",},},
     {"id":{"name":"sprBloodstream","path":"sprites/sprBloodstream/sprBloodstream.yy",},},
