@@ -1,6 +1,7 @@
 if (live_call()) return live_result;
     
 
+sprite_index = sprSubElec
 
 // Movement variables
 hspd = 0;                // Horizontal velocity
@@ -23,4 +24,4 @@ ship_power_max = 100 //ship's maximum power stores
 //orbmax = 2 //number of orbs that can be used
 
 //Torpedoes acquired?
-torpacq = false
+torpacq = false 

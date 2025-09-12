@@ -1,6 +1,6 @@
 //nuclear engine upgrade item collection
 if (place_meeting(x, y, objNukeEng)) {
-    image_index = 2;
+    sprite_index = sprSubNuke;
     ship_power = 250
     ship_power_max = 250;
     acceleration += .075
