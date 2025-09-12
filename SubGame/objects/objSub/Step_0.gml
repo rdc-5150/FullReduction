@@ -70,7 +70,6 @@ if (input_down) {
     ship_power += .02;
 }
 
-
 ////controller movement
 //var _gp = global.gamepad_main;
 //if (_gp != undefined) 
@@ -83,12 +82,6 @@ if (input_down) {
     //input_B = gamepad_button_check_pressed(_gp, gp_shoulderr); 
     //input_C = gamepad_button_check_pressed(_gp, gp_stickr);
 //} 
-
-
-//
-////Variables for Red/Ex
-//var target_size = (image_xscale && image_yscale)
-
 
 // Smooth rotation interpolation
 var rotation_speed = 5; 
@@ -125,44 +118,46 @@ y += vspd;
             //}
 //}
 
- 
 
+function update_player_scale() {
+    var cam = view_camera[0];
+    var base_width = 768;
+    var base_height = 432;
+    
+    // Calculate new camera size based on player scale
+    var new_width = base_width * image_xscale;
+    var new_height = base_height * image_yscale;
+    
+    // Apply camera changes
+    camera_set_view_size(cam, new_width, new_height);
+    camera_set_view_pos(cam, x - new_width/2, y - new_height/2);
+}
+ 
 //reduction mechanic, shoulder buttons on gamepad
 if (keyboard_check_pressed(ord("Z"))){
-    if image_yscale >= .15 
-    { 
-        image_yscale -= .15;
-        image_xscale = image_yscale;
-    }
-    
+    image_xscale -= 0.15;
+    image_yscale -= 0.15;
+    image_xscale = max(image_xscale, 0.15); // Minimum scale
+    image_yscale = max(image_yscale, 0.15);
+    update_player_scale();
 }
-
 
 //expansion mechanic
 if (keyboard_check_pressed(ord("X"))){
-    if image_yscale <= 1.85
-    {
-    image_yscale += .15;
-    image_xscale = image_yscale;
-    }
+    image_xscale += 0.15;
+    image_yscale += 0.15;
+    image_xscale = min(image_xscale, 1.85); // Maximum scale
+    image_yscale = min(image_yscale, 1.85);
+    update_player_scale();
+}
    
 //reset to initial reduction
 if (keyboard_check_pressed(ord("C"))){
-    if image_yscale != 1 {
+    if image_yscale != 1 
+    {
     image_yscale = 1
     image_xscale = image_yscale;
     }
+    update_player_scale();
 } 
-    
-var cam = view_camera[0]; // Assuming you're using view 0
 
-// Calculate new viewport size based on player scale
-var base_width = 768;  // Your base viewport width
-var base_height = 432; // Your base viewport height
-
-var new_width = base_width * image_xscale;
-var new_height = base_height * image_yscale;
-
-// Apply the new viewport size
-camera_set_view_size(cam, new_width, new_height);
-}

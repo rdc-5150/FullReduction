@@ -6,7 +6,7 @@ sprite_index = sprSubElec
 // Movement variables
 hspd = 0;                // Horizontal velocity
 vspd = 0;                // Vertical velocity
-acceleration = 0.09;      // How fast sub speeds up
+acceleration = 0.12;      // How fast sub speeds up
 friction = 10;          // Water resistance
 
 // Physics
